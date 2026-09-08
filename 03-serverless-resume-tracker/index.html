@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Resume Tracker</h1>
+        <p>Track your job applications in one place.</p>
+
+        <form id="applicationForm">
+            <label for="company">Company</label>
+            <input type="text" id="company" required>
+
+            <label for="position">Position</label>
+            <input type="text" id="position" required>
+
+            <label for="status">Status</label>
+            <select id="status" required>
+                <option value="">Select status</option>
+                <option value="Applied">Applied</option>
+                <option value="Interview">Interview</option>
+                <option value="Rejected">Rejected</option>
+                <option value="Offer">Offer</option>
+            </select>
+
+            <button type="submit">Add Application</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
